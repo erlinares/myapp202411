@@ -321,8 +321,7 @@ if "Modelado" in selected_page:
     st.write("""
     ## Entrenamiento con diferentes modelos
     Resultados""")
-    if uploaded_file is not None:
-        X_train, X_test, y_train, y_test = modelling(dataset)
+
 
         
 if "Neural Network" in selected_page:
