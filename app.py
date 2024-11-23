@@ -5,6 +5,20 @@ import plotly.offline as py
 #py.init_notebook_mode(connected=True) # this code, allow us to work with offline plotly version
 import plotly.graph_objs as go # it's like "plt" of matplot
 import plotly.tools as tls # It's useful to we get some tools of plotly
+#import matplotlib.pyplot as plt
+#import seaborn as sns
+#librerias de modelado
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.naive_bayes import GaussianNB
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.svm import SVC
+#from xgboost import XGBClassifier
+#from lightgbm import LGBMClassifier
+from sklearn.model_selection import KFold,cross_val_score
 
 #definir funciones
 def get_eda(dataset):
