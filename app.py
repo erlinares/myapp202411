@@ -8,16 +8,6 @@ st.title("Credit Card App")
 # ============ Aplicación Principal  ============
         
 # Definir las opciones de página
-import streamlit as st 
-import pandas as pd
-
-#writing simple text 
-
-st.title("Credit Card App")
-
-# ============ Aplicación Principal  ============
-        
-# Definir las opciones de página
 pages = ["Cargar Datos", "Explorar Datos"]
 
 # Mostrar un menú para seleccionar la página
