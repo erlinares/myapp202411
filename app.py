@@ -19,6 +19,8 @@ from sklearn.svm import SVC
 #from xgboost import XGBClassifier
 #from lightgbm import LGBMClassifier
 from sklearn.model_selection import KFold,cross_val_score
+from sklearn.metrics import roc_curve, auc, roc_auc_score
+from sklearn.metrics import accuracy_score, confusion_matrix, fbeta_score, classification_report
 
 #definir funciones
 def get_eda(dataset):
@@ -321,7 +323,8 @@ if "Modelado" in selected_page:
     st.write("""
     ## Entrenamiento con diferentes modelos
     Resultados""")
-
+    if uploaded_file is not None:
+        X_train, X_test, y_train, y_test = modelling(dataset)
 
         
 if "Neural Network" in selected_page:
