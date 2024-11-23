@@ -26,3 +26,8 @@ if "Cargar Datos" in selected_page:
         dataset = pd.read_csv(uploaded_file)
     # Mostrar datos en una tabla
         st.write(dataset)
+
+if "Explorar Datos" in selected_page:
+    st.write("""
+    ## Explore Data
+    Distributions""")
